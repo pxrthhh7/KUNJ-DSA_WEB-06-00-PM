@@ -23,12 +23,11 @@ public:
 
     void update()
     {
-        count ++;
+        count++;
         if (count > 10)
         {
             cout << "You are Overusing Gadget !" << endl;
         }
-        
     }
 };
 
@@ -36,7 +35,7 @@ int main()
 {
     string gadgetn;
     gadget nobita, doraemon;
-    int time;
+    int time = 0;
 
     cout << "Doraemon's Gadget's" << endl;
     cout << "----------------------------------------" << endl;
@@ -52,10 +51,9 @@ int main()
     cout << "How Many Times Do You Want to Use this Gadgets : ";
     cin >> time;
 
-
     for (int i = 1; i <= time; i++)
     {
-        cout << "You are using " << gadgetn << " For " << i << " Time" <<endl;
+        cout << "You are using " << gadgetn << " For " << i << " Time" << endl;
 
         doraemon.update();
     }
