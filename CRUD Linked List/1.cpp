@@ -41,14 +41,31 @@ public:
     }
     void read()
     {
-        cout << "crud 2" << endl;
+        // cout << "crud 2" << endl;
 
         // while (head != NULL) {
 
-            cout << head->data << " ";
-    
-            head = head->next;
+        //     cout << head->data << " ";
+
+        //     head = head->next;
         // }
+        // cout << endl;
+
+        cout << "crud 2" << endl;
+
+        if (head == NULL)
+        {
+            cout << "List is empty." << endl;
+            return;
+        }
+
+        Node *temp = head; // Use a temporary pointer to traverse the list
+
+        while (temp != NULL)
+        {
+            cout << temp->data << " ";
+            temp = temp->next;
+        }
         cout << endl;
     }
     void insert()
@@ -75,7 +92,7 @@ int main()
         cout << "3. Insert" << endl;
         cout << "4. Remove" << endl;
         cin >> user;
-        
+
         switch (user)
         {
         case 0:
