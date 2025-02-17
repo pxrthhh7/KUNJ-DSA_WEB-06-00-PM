@@ -111,10 +111,7 @@ int main()
         switch (user)
         {
         case 0:
-            cout << "Enter a Value You Want to be Push : ";
-            cin >> value;
-
-            obj1.push(value);
+            cout << "You Are Successfully Exited !";
             break;
 
         case 1:
